@@ -19,6 +19,8 @@ spec:
           env:
             - name: SPRING_DATASOURCE_URL
               value: "jdbc:postgresql://postgres:5432/eshop_db"
+            - name: GOOGLE_CLOUD_PROJECT
+              value: architect-certification-289902-31-dev
             # - name: SPRING_PROFILES_ACTIVE
             #   value: "chaos-monkey"  
 ---

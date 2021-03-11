@@ -14,12 +14,14 @@ spec:
       terminationGracePeriodSeconds: 5
       containers:
       - name: eshop-recommendservice
-        image: eshop-recommendservice
+        image: gcr.io/architect-certification-289902/31/eshop-recommendservice:3
         ports:
         - containerPort: 8093
         env:
           - name: URL_PRODUCTSERVICE
             value: http://eshop-productservice:8092
+          - name: GOOGLE_CLOUD_PROJECT
+            value: architect-certification-289902-31-dev
 ---
 apiVersion: v1
 kind: Service
